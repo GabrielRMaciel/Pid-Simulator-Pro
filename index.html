@@ -111,10 +111,10 @@
                     <button id="reset-button" class="action-button btn-secondary">
                         🔄 Reiniciar Sistema
                     </button>
-                    <button id="disturbance-button" class="action-button btn-primary">
-                        ⚡ Aplicar Perturbação
+                    <button id="disturbance-button" class="action-button btn-secondary">
+                        ⚡ Perturbação: <span class="status-badge status-inactive">Inativa</span>
                     </button>
-                    <button id="noise-button" class="action-button btn-warning">
+                    <button id="noise-button" class="action-button btn-secondary">
                         📊 Ruído: <span class="status-badge status-inactive">Off</span>
                     </button>
                     <button id="delay-button" class="action-button btn-secondary">
@@ -228,7 +228,7 @@
 
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem;">
                     <span style="color: var(--text-secondary);">Setpoint:</span>
-                    <span style="color: var(--accent-success); font-weight: 600;">80.0</span>
+                    <span id="status-setpoint-value" style="color: var(--accent-success); font-weight: 600;">80.0</span>
                 </div>
 
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem;">
@@ -260,18 +260,24 @@
                 <div class="cluster-title">🎓 Cenário Ativo</div>
                 <div id="scenario-info">
                     <div id="scenario-title" style="font-weight: 600; margin-bottom: 0.5rem;"></div>
-                    <div id="scenario-description" style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem;"></div>
-                    <div id="scenario-explanation" style="font-size: 0.85rem; color: var(--text-muted); font-style: italic;"></div>
+                    <div id="scenario-description"
+                        style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem;"></div>
+                    <div id="scenario-explanation"
+                        style="font-size: 0.85rem; color: var(--text-muted); font-style: italic;"></div>
                     <div id="scenario-progress" style="margin-top: 0.8rem;">
-                        <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.3rem;">
+                        <div
+                            style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 0.3rem;">
                             <span id="scenario-step">Passo 1 de 4</span>
                             <span id="scenario-percent">25%</span>
                         </div>
                         <div style="background: var(--border-subtle); height: 4px; border-radius: 2px;">
-                            <div id="scenario-progress-bar" style="background: var(--accent-primary); height: 100%; border-radius: 2px; width: 25%; transition: width 0.3s ease;"></div>
+                            <div id="scenario-progress-bar"
+                                style="background: var(--accent-primary); height: 100%; border-radius: 2px; width: 25%; transition: width 0.3s ease;">
+                            </div>
                         </div>
                     </div>
-                    <button id="stop-scenario-button" class="action-button btn-secondary" style="margin-top: 0.8rem; font-size: 0.8rem; padding: 0.5rem;">
+                    <button id="stop-scenario-button" class="action-button btn-secondary"
+                        style="margin-top: 0.8rem; font-size: 0.8rem; padding: 0.5rem;">
                         ⏹️ Parar Cenário
                     </button>
                 </div>

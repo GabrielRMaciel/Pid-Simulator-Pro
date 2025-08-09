@@ -4,9 +4,9 @@
      /* PALETA DE CORES IMPORTADA DO STYLE.CSS */
      --bg-primary: #08080C;      /* Era --bg-dark de style.css */
      --bg-secondary: #13131A;    /* Era --bg-card de style.css */
-     --accent-primary: #00AEEF;    /* Era --accent-blue de style.css */
-     --accent-secondary: #E42289;  /* Era --accent-pink de style.css */
-     --accent-tertiary: #4A2FBD;   /* Era --accent-mid de style.css */
+     --accent-primary: rgb(44, 186, 190);    /* Era --accent-blue de style.css */
+     --accent-secondary: #4194f3;  /* Era --accent-pink de style.css */
+     --accent-tertiary: #1e52e0;   /* Era --accent-mid de style.css */
      --text-primary: #EAEAEA;      /* Era --text-light de style.css */
      --text-secondary: #A9A9A9;    /* Era --text-secondary de style.css */
      --text-muted: #888888;        /* Um tom intermediário para 'muted' */
@@ -80,6 +80,8 @@
      background: linear-gradient(45deg, transparent, rgba(0, 174, 239, 0.05), transparent);
      animation: shimmer 3s ease-in-out infinite;
  }
+
+ 
 
  @keyframes shimmer {
 
@@ -515,7 +517,7 @@
      }
  }
 
- @media (min-width: 768px) {
+ @media (min-width: 665px) {
      .metrics-grid {
          grid-template-columns: repeat(2, 1fr);
      }
